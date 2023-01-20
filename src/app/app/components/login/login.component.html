@@ -1,0 +1,40 @@
+<div class="body">
+
+    <div class="container_login" >
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="log">Login</div>
+        <div class="form-group">
+            <input type="email" id="email" placeholder="Email" class="form-control" formControlName="email"
+                name="email" />
+        </div>
+        <div class="form-group">
+            <input type="password" id="password" placeholder="Password" class="form-control"
+                formControlName="password" name="password" />
+        </div>
+        <input type="submit" class="btn btn-primary w-100" value="Login" name="">
+    </form>
+  </div>
+</div>
+      <!-- <form>
+        <div class="log">Login</div>
+
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" placeholder="Email..." class="form-control" id="email" [formControl]="email" required>
+          <mat-error *ngIf="email?.touched && email?.hasError('required')">{{error_email()}}</mat-error>
+  
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" placeholder="Password..." class="form-control" id="pwd" [formControl]="password" required>
+          <mat-error *ngIf="password?.touched && password?.hasError('required')">{{error_password()}}</mat-error>
+        </div>
+        <div class="alert alert-danger" *ngIf="error">{{ "Accest cont nu exista!" }}</div>
+       
+        <button class="btn btn-success" id="login_button" (click)="login()">Login</button>
+    </form> -->
+    
+
+  
+  
+  
