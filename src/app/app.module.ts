@@ -13,6 +13,8 @@ import { FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { FormControl, FormGroup } from '@angular/forms';
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { RouterModule } from '@angular/router';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { AdminPageComponent } from './admin-page/admin-page.component';
 
 
 
@@ -20,10 +22,12 @@ import { RouterModule } from '@angular/router';
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent,
     LoginComponent,
     FooterComponent,
-    UserDataComponent
+    UserDataComponent,
+    NotFoundComponent,
+    AdminPageComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

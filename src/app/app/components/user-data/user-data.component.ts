@@ -8,8 +8,14 @@ import { User } from 'src/app/interfaces/user';
 })
 export class UserDataComponent implements OnInit {
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    console.log("");
+
   }
 
   @Input() alldatausers: any = [];
+  @Output() onRemoveUser = new EventEmitter<number>();
+
+  removeUser(index: number) {
+    this.onRemoveUser.emit(index);
+  }
 }

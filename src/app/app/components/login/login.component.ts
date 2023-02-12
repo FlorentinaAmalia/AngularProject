@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit{
   ngOnInit(): void {
     console.log('')
     if(this.auth.isLoggedIn() == true){
-          this.router.navigate(['home'])}
+          this.router.navigate(['admin'])}
 
   }
   
@@ -28,12 +28,16 @@ onSubmit(): void {
     this.auth.login(this.loginForm.value).subscribe(
       (result) => {
         console.log(result);
-        this.router.navigate(['home']);
+        this.router.navigate(['admin']);
       },
       (err: Error) => {
         alert(err.message);
       }
     );
   }
+}
+
+error_password(){
+  console.log("A")
 }
 }
